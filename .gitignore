@@ -104,3 +104,11 @@ local_env.yml
 # Uncomment and add personal exclusions:
 # .mylocal/
 # *.dev.json
+
+# === Workspace‑specific ignores ===
+# generated reports / temporary outputs
+output/
+cost-query-lastmonth.json
+
+# ignore personal workspace configuration
+*.code-workspace
