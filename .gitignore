@@ -1,0 +1,106 @@
+# Claude-Workspace .gitignore
+# Safe for Azure/M365 automation work in WSL
+
+# === Secrets & Credentials ===
+*.pem
+*.key
+*.pfx
+*.p12
+.env
+.env.local
+secrets.json
+credentials.json
+appsettings.Production.json
+
+# === Azure Specifics ===
+.azure/
+*.publishsettings
+publishsettings.xml
+
+# === Microsoft 365 ===
+token.json
+.m365_auth
+
+# === PowerShell ===
+*.ps1xml
+*.psd1xml
+*.psm1xml
+PSScriptAnalyzerResults.csv
+
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.pip-cache/
+venv/
+env/
+ENV/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# === Node/TypeScript (if used) ===
+node_modules/
+package-lock.json
+yarn.lock
+.npmrc
+
+# === IDE & Editor ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# === OS ===
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+
+# === Temporary & Build ===
+*.tmp
+*.bak
+*.old
+temp/
+tmp/
+build/
+dist/
+.build/
+
+# === Logs ===
+*.log
+logs/
+*.log.*
+
+# === SQL & Database ===
+*.bak
+*.mdf
+*.ldf
+*.ndf
+
+# === Archive ===
+# Keep 99-ARCHIVE/ but ignore temp artifacts within it
+99-ARCHIVE/*.log
+99-ARCHIVE/*.tmp
+
+# === Local Development ===
+.local/
+local.settings.json
+local_env.yml
+
+# === Git ===
+.git/
+.gitkeep
+
+# === Custom Local Ignores ===
+# Uncomment and add personal exclusions:
+# .mylocal/
+# *.dev.json
