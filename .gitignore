@@ -112,4 +112,3 @@ cost-query-lastmonth.json
 
 # ignore personal workspace configuration
 *.code-workspace
-00-CORE/
